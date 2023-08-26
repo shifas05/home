@@ -51,10 +51,10 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/portfolio-pic.jpg"),
+  imageLink: "",
   imageSize: 375,
   message:
-    "My name is Shifas Hassan, I'm a passionate software engineer based in Kerala, India. My love for technology and a deep-seated curiosity have driven me to explore and create in the ever-evolving world of software.",
+    "My name is Shifas Hassan, I'm a passionate full stack software engineer. I've around 6 years of experience working in the Software industry. My love for technology and a deep-seated curiosity have driven me to explore and create in the ever-evolving world of software.",
   resume: require("../editable-stuff/resume.pdf")
 };
 
@@ -65,7 +65,7 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Recent Projects",
+  heading: "Hobby ⭐",
   gitHubUsername: "shifas05",
   reposLength: 4,
   specificRepos: [],
@@ -100,14 +100,14 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
+    { name: "Laravel", value: 90 },
+    { name: "Angular", value: 70 },
     { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
+    { name: "Python", value: 50 },
+    { name: "JavaScript", value: 70 },
     { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "HTML/CSS", value: 90 },
+    { name: "Vue", value: 75 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -126,23 +126,25 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "I am presently seeking full-time remote positions in Software Engineering.! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  email: "shifashassanp@gmail.com",
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Senior Software Engineer',
+      companylogo: require('../assets/img/cubet-logo.jpg'),
+      date: 'May 2023 – Present',
+      workLocationAndType: 'Hybrid'
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Full Stack Software Engineer',
+      companylogo: require('../assets/img/batchservice-logo.jpg'),
+      date: 'August 2018 – May 2023',
+      workLocationAndType: 'Remote'
     },
   ]
 }
