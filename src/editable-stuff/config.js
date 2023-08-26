@@ -136,12 +136,16 @@ const experiences = {
   data: [
     {
       role: 'Senior Software Engineer',
+      companyName: 'Cubet',
+      companyLink : 'https://www.linkedin.com/company/cubet-technologies/',
       companylogo: require('../assets/img/cubet-logo.jpg'),
       date: 'May 2023 – Present',
       workLocationAndType: 'Hybrid'
     },
     {
       role: 'Full Stack Software Engineer',
+      companyName: 'BatchService',
+      companyLink: 'https://www.linkedin.com/company/batchservice/',
       companylogo: require('../assets/img/batchservice-logo.jpg'),
       date: 'August 2018 – May 2023',
       workLocationAndType: 'Remote'

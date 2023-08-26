@@ -9,6 +9,7 @@ const ExperienceCard = ({ data }) => {
     <Col lg="6">
       <div className="pb-5 text-center">
         <img className=" bg-white mb-3" src={data.companylogo} alt="" />
+        <p className="lead"><a className="company-link" target="_blank" href={data.companyLink}>{data.companyName}</a></p>
         <p className="lead">
           {data.role}
           <br />
