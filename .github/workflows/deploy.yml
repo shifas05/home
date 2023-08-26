@@ -1,4 +1,4 @@
-name: Deploy to Production
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -22,16 +22,17 @@ jobs:
         run: npm install
 
       - name: Build React app
-          run: npm run build
+        run: npm run build
 
-            - name: Deploy to GitHub Pages
-              run: |
-                # Configure Git user and email
-                git config --global user.name 'Shifas'
-                git config --global user.email 'shifashassan13@gmail.com'
+      - name: Deploy to GitHub Pages
+        run: |
+          # Configure Git user and email
+          git config --global user.name 'shifas05'
+          git config --global user.email 'shifashassan13@gmail.com'
 
-                # Deploy to the gh-pages branch (GitHub Pages source branch)
-                npm install -g gh-pages
-                gh-pages -d build
+          # Deploy to the gh-pages branch (GitHub Pages source branch)
+          npm install -g gh-pages
+          gh-pages -d build
+
     env:
       CI: true
